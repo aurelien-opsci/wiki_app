@@ -115,7 +115,7 @@ def show_panel_complete(pages: list[str], max_items: int = None):
     buf = io.StringIO()
     df.to_csv(buf, index=False)
     st.download_button("Télécharger CSV", buf.getvalue(),
-                       file_name="panel.csv", mime="text/csv")
+                       file_name="py/panel.csv", mime="text/csv")
 
 def show_sensitivity(pages: list[str], start: str, end: str, lang: str, max_items: int = 10):
     # pré-classement Heat
