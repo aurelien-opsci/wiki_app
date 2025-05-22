@@ -189,7 +189,7 @@ def run_app2():
     </style>""", unsafe_allow_html=True)
 
     panel_sel, start_dt, end_dt, lang, mode, pages = sidebar_inputs(
-        df_panels=load_panels(Path("panel.csv")),
+        df_panels=load_panels(Path("py/panel.csv")),
         panel_csv=Path("py/panel.csv"),
         blacklist_csv=Path("py/blacklist.csv")
     )
