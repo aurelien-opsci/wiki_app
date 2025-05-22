@@ -69,7 +69,7 @@ if __name__ == "__main__":
     import argparse, json
     ap = argparse.ArgumentParser(description="Ratio de références blacklistées par article")
     ap.add_argument("pages", nargs="+", help="Titres d’articles")
-    ap.add_argument("--blacklist", default="blacklist.csv", help="Chemin vers blacklist.csv")
+    ap.add_argument("--blacklist", default="/home/cytech/Documents/OPSCI/wiki_app/py/blacklist.csv", help="Chemin vers blacklist.csv")
     ap.add_argument("--lang", default="fr", help="Code langue wiki")
     ap.add_argument("--json", action="store_true", help="Affiche le résultat en JSON")
     ns = ap.parse_args()

@@ -81,7 +81,7 @@ def compute_scores(
         "citation_gap":     get_citation_gap(pages),
         "readability":      pd.Series({p: _readab(p) for p in pages}),
         "anon_edit":        get_anon_edit_share(pages, start, end, lang),
-        "blacklist_share" : get_blacklist_share(pages, "blacklist.csv", lang)
+        "blacklist_share" : get_blacklist_share(pages, "/home/cytech/Documents/OPSCI/wiki_app/py/blacklist.csv", lang)
 
     }
     metrics = pd.DataFrame(raw).apply(pd.to_numeric, errors="coerce").fillna(0)
