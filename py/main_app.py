@@ -77,7 +77,7 @@ def inject_styles():
 
 # ── 3. Header / Logo / Title ─────────────────────────────────────
 st.markdown('<div class="header main">', unsafe_allow_html=True)
-#st.image("/home/cytech/Documents/OPSCI/wiki_app/py/opscilogo.png", width=300)
+st.image("py/opscilogo.png", width=300)
 st.markdown("<h1>OPS​CI Dashboard</h1>", unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
 
