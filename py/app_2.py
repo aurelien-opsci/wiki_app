@@ -190,8 +190,8 @@ def run_app2():
 
     panel_sel, start_dt, end_dt, lang, mode, pages = sidebar_inputs(
         df_panels=load_panels(Path("panel.csv")),
-        panel_csv=Path("panel.csv"),
-        blacklist_csv=Path("blacklist.csv")
+        panel_csv=Path("py/panel.csv"),
+        blacklist_csv=Path("py/blacklist.csv")
     )
 
     st.title(f"Panel « {panel_sel} » – {mode}")
