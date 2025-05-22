@@ -50,7 +50,7 @@ def _wikitext(title: str, lang: str) -> str:
     return pg.get("revisions", [{}])[0].get("slots", {}).get("main", {}).get("content", "")
 
 
-def get_blacklist_share(pages: List[str], blacklist_csv="blacklist.csv", lang="fr") -> pd.Series:
+def get_blacklist_share(pages: List[str], blacklist_csv="/home/cytech/Documents/OPSCI/wiki_app/py/blacklist.csv", lang="fr") -> pd.Series:
     bl_domains = _load_blacklist(blacklist_csv)
     ratios = {}
     for p in pages:
